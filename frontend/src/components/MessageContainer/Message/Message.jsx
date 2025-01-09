@@ -22,7 +22,7 @@ const Message = ({message}) => {
 
   return (
     <div className={`app__message ${chatOrigin}`}>
-      <div className='app__message-core'>
+      <div className={`app__message-core ${bubbleBgColor}`}>
         {message.message}
       </div>
       <div className='app__message-time'>
