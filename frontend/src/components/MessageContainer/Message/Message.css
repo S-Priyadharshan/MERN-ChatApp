@@ -1,0 +1,59 @@
+.app__message{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin:1rem 0.5rem 1rem 1rem;
+}
+
+.chat-start{
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.chat-end{
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.app__message-core{
+    color: white;
+    background-color: grey;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    max-width: 60%;
+    word-wrap: break-word;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.shake{
+    animation: shake 0.5s ease-in-out;  
+}
+
+@keyframes shake{
+    0%,100%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-5px);
+    }
+    50%{
+        transform: translateX(5px);
+    }
+    75%{
+        transform: translateX(-5px);
+    }
+}
+
+.app__message-time{
+    font-size: 0.75rem;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    gap:0.25rem;
+    margin-top: 0.25rem;
+}
+
+.chat-background-me{
+    color: #3b82f6;
+}

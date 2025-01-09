@@ -1,0 +1,87 @@
+.app__navigation{
+    width: 5%;
+    /* border: 2px solid white;
+    border-radius: 1rem; */
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 4px 4px #fefefe;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    font-size: 25px;
+    padding: 1rem 2rem;
+    animation: rainbowShadow 3s infinite linear;
+}
+
+.app__navigation-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.app__navigation-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.app__navigation-top i:hover,
+.app__navigation-bottom i:hover {
+    background-color: rgba(211, 211, 211, 0.5); 
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    /* color: black;  */
+}
+
+
+.app__navigation-top i,
+.app__navigation-bottom i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    transition: transform 0.4s ease-in-out, background 0.4s ease-in-out; 
+}
+
+.logout-btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.4s ease-in-out, background 0.4s ease-in-out; 
+}
+
+.logout-btn:hover{
+    background-color: rgba(211,211,211,0.5);
+}
+
+@keyframes rainbowShadow {
+    0% {
+      box-shadow: 0 0 8px 2px red, 0 0 15px 5px orange;
+    }
+    25% {
+      box-shadow: 0 0 8px 2px yellow, 0 0 15px 5px green;
+    }
+    50% {
+      box-shadow: 0 0 8px 2px blue, 0 0 15px 5px indigo;
+    }
+    75% {
+      box-shadow: 0 0 8px 2px violet, 0 0 15px 5px red;
+    }
+    100% {
+      box-shadow: 0 0 8px 2px red, 0 0 15px 5px orange;
+    }
+  }
+
+
+
+
