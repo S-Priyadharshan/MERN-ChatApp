@@ -1,0 +1,41 @@
+.app__messageinput{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__messageinput input{
+    width: 92%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: black;
+    padding: 2% 10px;
+    border: 0;
+    color: white;
+}
+.app__messageinput input:focus{
+    outline: 0;
+    border: 0;
+}
+
+.app__messageinput button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8%;
+    font-size: 1.5rem;
+    padding: 1.15% 1.25%;
+    background-color: black;
+    color: white;
+    border-left: 1px solid white;  
+    border-radius: 0 0 5px 0;  
+}
+.app__messageinput button:disabled{
+    color: gray;
+}
+
+.app__messageinput input::placeholder{
+    color: #eee;
+}

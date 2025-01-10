@@ -6,7 +6,11 @@ import {SnackbarProvider} from 'notistack'
 import { AuthContextProvider } from './context/AuthContext.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter
+    future={{
+      v7_startTransition: true,      // Opt-in to transition state updates
+      v7_relativeSplatPath: true,     // Opt-in to new splat route behavior
+    }}>
     <SnackbarProvider>
       <AuthContextProvider>
         <App/>

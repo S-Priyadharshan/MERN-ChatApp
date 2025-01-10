@@ -1,5 +1,6 @@
 .app__sidebar{
-    width: 30%;
+    min-width: 30%;
+    resize: both !important;
     /* border: 2px solid white; */
     /* border-radius: 1rem; */
     display: flex;
