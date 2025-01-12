@@ -6,9 +6,8 @@ import './Conversations.css';
 
 const Conversations = () => {
   const {loading,conversations} = useGetConversations();
-  // console.log(conversations);
   return (
-    <div>
+    <div className='conversations'>
       {loading ? (
         <p>Loading Conversations...</p>
       ):conversations.length > 0 ?(

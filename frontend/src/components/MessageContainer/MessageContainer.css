@@ -2,14 +2,13 @@
     width: 65%;
     /* border: 2px solid white;
     border-radius: 1rem; */
-    border: 2px solid white;
+    border: 2px solid white;  
     border-radius: 5px;
-    box-shadow: 4px 4px #fefefe;
+    /* box-shadow: 4px 4px #fefefe; */
     display: flex;
     flex-direction: column;
     height: 100vh;
-    animation: rainbowShadow 3s infinite linear;
-}
+  }
 
 .app__messages-header{
     width: 100%;
@@ -38,10 +37,10 @@
 
   .app__default-box {
     text-align: center;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 4px 4px #fefefe;
+    border-radius: 8px;
+    box-shadow:0 0 15px 1px #fefefe;
     max-width: 400px;
   }
   
@@ -62,29 +61,14 @@
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+    
   }
   
   .app__default-icon {
     font-size: 3rem;
     color: #fff;
   }
-@keyframes rainbowShadow {
-  0% {
-    box-shadow: 0 0 8px 2px red, 0 0 15px 5px orange;
-  }
-  25% {
-    box-shadow: 0 0 8px 2px yellow, 0 0 15px 5px green;
-  }
-  50% {
-    box-shadow: 0 0 8px 2px blue, 0 0 15px 5px indigo;
-  }
-  75% {
-    box-shadow: 0 0 8px 2px violet, 0 0 15px 5px red;
-  }
-  100% {
-    box-shadow: 0 0 8px 2px red, 0 0 15px 5px orange;
-  }
-} 
+
 
 .app__messages-main{
   height: 80%;

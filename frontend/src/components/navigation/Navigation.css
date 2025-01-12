@@ -4,7 +4,7 @@
     border-radius: 1rem; */
     border: 2px solid white;
     border-radius: 5px;
-    box-shadow: 4px 4px #fefefe;
+    /* box-shadow: 4px 4px #fefefe; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,7 +12,7 @@
     height: 100vh;
     font-size: 25px;
     padding: 1rem 2rem;
-    animation: rainbowShadow 3s infinite linear;
+    /* animation: rainbowShadow 3s infinite linear; */
 }
 
 .app__navigation-top{
