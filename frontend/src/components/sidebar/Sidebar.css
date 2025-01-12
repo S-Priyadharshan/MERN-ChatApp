@@ -1,6 +1,5 @@
 .app__sidebar{
     min-width: 30%;
-    resize: both !important;
     /* border: 2px solid white; */
     /* border-radius: 1rem; */
     display: flex;
@@ -14,8 +13,8 @@
     /* border-radius: 2rem; */
     border: 2px solid white;
     border-radius: 5px;
-    box-shadow: 4px 4px #fefefe;
-    animation: rainbowShadow 3s infinite linear;
+    /* box-shadow: 0 0 19px 2px #aaa; */
+    /* animation: rainbowShadow 3s infinite linear; */
 }
 
 .app__sidebar-users{
@@ -23,13 +22,11 @@
     /* border-radius: 2rem; */
     border: 2px solid white;
     border-radius: 5px;
-    box-shadow: 4px 4px #fefefe;
-    padding: 1rem;
-    height: 100%;
-    animation: rainbowShadow 3s infinite linear;
+    /* box-shadow: 0 0 19px 2px #aaa;    */
+     height: 100%;
 }
 
-@keyframes rainbowShadow {
+/* @keyframes rainbowShadow {
     0% {
       box-shadow: 0 0 8px 2px red, 0 0 15px 5px orange;
     }
@@ -46,4 +43,4 @@
       box-shadow: 0 0 8px 2px red, 0 0 15px 5px orange;
     }
   }
-  
+   */

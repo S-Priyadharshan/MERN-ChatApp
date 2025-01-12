@@ -1,10 +1,26 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
     box-sizing: border-box;
     padding: 0;
-    margin:0;
+    margin: 0;
     scroll-behavior: smooth;
+    font-family: "Aldrich", serif;
+    font-weight: 500;
 }
 
-html{
+html {
     background-color: #111;
+    overflow: hidden;
+}
+
+.cursor-blur{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: #555;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 120px 90px hsl(0, 0%, 20%);
+    z-index: -9999999999999;
+    pointer-events: none;
 }
