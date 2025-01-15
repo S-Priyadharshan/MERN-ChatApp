@@ -23,7 +23,7 @@ const MessageInput = () => {
   return (
     <form onSubmit={handleSubmit} className='app__messageinput'>
       <div className='app__messageinput'>
-        <input type='text'
+        <textarea type='text'
           placeholder='Text here'
           value={message}
           onChange={(e) => setMessage(e.target.value)} />

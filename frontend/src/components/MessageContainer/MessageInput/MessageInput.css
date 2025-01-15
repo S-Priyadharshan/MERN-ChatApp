@@ -5,7 +5,7 @@
     justify-content: space-between;
 }
 
-.app__messageinput input{
+.app__messageinput textarea{
     width: 92%;
     height: 100%;
     border-radius: 5px;
@@ -13,8 +13,14 @@
     padding: 2% 10px;
     border: 0;
     color: white;
+    overflow-y: scroll;
+    resize: none;
+    scrollbar-width: none;
+    font-size: medium;
 }
-.app__messageinput input:focus{
+
+
+.app__messageinput textarea:focus{
     outline: 0;
     border: 0;
 }
@@ -36,6 +42,7 @@
     color: gray;
 }
 
-.app__messageinput input::placeholder{
+.app__messageinput textarea::placeholder{
+    margin-top: 2rem;
     color: #eee;
 }

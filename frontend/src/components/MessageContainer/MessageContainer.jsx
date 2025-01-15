@@ -40,10 +40,10 @@ const MessageContainer = () => {
 
 const NoChatSelected = ()=>{
   const {authUser} = useAuthContext();
-  console.log(authUser);
+  console.table(authUser);
   if(!authUser) return(<p>Loading state....</p>);
   return(
-    <div className='app__default'>
+    <div className='app__default' style={{cursor:"none"}}>
       <div className='app__default-box'>
         <h1 className='app__default-title'>Hey There! 👋 {authUser.username}</h1>
         <p className='app__default-text'>Select a chat to start messaging</p>

@@ -1,7 +1,14 @@
 export function extractTime(dateString){
     const date = new Date(dateString);
-    const hours = padZero(date.getHours());
-    const minutes = padZero(date.getMinutes());
+    console.log(date.getHours());
+    let hours = padZero(date.getHours());
+    let minutes = padZero(date.getMinutes());
+    if(hours>12){
+        hours-=12;
+        minutes+=' pm';
+    }else{
+        minutes+=' am';
+    }
     return `${hours}:${minutes}`;
 }
 
