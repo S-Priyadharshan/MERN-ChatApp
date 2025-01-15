@@ -2,12 +2,13 @@ import React from 'react'
 import { useEffect, useRef } from 'react';
 import useGetMessages from '../../../hooks/useGetMessages';
 import Message from '../Message/Message';
-import { useAuthContext } from '../../../context/AuthContext';
 
 import './Messages.css';
+import useListenMessages from '../../../hooks/useListenMessages';
 
 const Messages = () => {
   const { messages, loading } = useGetMessages();
+  useListenMessages();
   const lastMessageRef = useRef();
   // const { authUser } = useAuthContext();
 

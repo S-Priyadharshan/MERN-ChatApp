@@ -1,7 +1,6 @@
 const Message = require('../models/message.js');
 const Convo = require('../models/convo.js');
 const {getReceiverSocketId, io} = require('../socket/socket.js');
-const { model } = require('mongoose');
 
 module.exports.sendMessage = async (req,res)=>{
     try{
@@ -30,6 +29,12 @@ module.exports.sendMessage = async (req,res)=>{
             convo.messages.push(newMessage._id);
         }
         await Promise.all([newMessage.save(),convo.save()]);
+
+        const receiverSocketId = getReceiverSocketId(receiverId);
+        if(receiverSocketId){
+            io.to(receiverSocketId).emit("newMessage",newMessage);
+        }
+
         res.status(200).json(newMessage);
     }catch(err){
         console.log("Error in sending message",err.message);

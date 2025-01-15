@@ -4,6 +4,7 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import {SnackbarProvider} from 'notistack'
 import { AuthContextProvider } from './context/AuthContext.jsx'
+import { SocketContextProvider } from './context/SocketContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter
@@ -13,7 +14,9 @@ createRoot(document.getElementById('root')).render(
     }}>
     <SnackbarProvider>
       <AuthContextProvider>
-        <App/>
+        <SocketContextProvider>
+          <App/>
+        </SocketContextProvider>
       </AuthContextProvider>
     </SnackbarProvider>
   </BrowserRouter>
